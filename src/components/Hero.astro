@@ -1,11 +1,104 @@
-<div class="">
-  <div class="flex flex-col md:container mx-auto py-80">
-    <h1 class="text-white text-8xl">Hi. i'm Ruben Godoy</h1>
-    <p class="text-gray-500 text-2xl pt-2">Engineer and Developer from Santiago, Chile 🇨🇱 </p>
-    <span class="text-white text-2xl text-justify pt-8 sm:container"> 
+---
 
-      Rubén Godoy cuenta con una amplia experiencia en el desarrollo de aplicaciones web, aplicaciones y bases de datos, sumado a más de tres años de experiencia en el área de Quality Assurance en software para el sector bancario chileno. Además, ha desempeñado roles como Ingeniero de Operaciones para Entel en Chile y Perú, y cuenta con experiencia previa en la dirección de equipos técnicos.
 
-    </span>
+
+---
+
+
+<div class="text-center">
+  <div  class="flex flex-col md:container mx-auto py-80">
+    <h1 class="text-white text-8xl">Hi, It's Ruben</h1>
+    <h3 class="text-animation text-white">I'm <span class="text-lime-500"></span></h3>
+   
+  
+
   </div>
 </div>
+
+<style>
+.text-animation{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.text-animation span{
+  position: relative;
+}
+
+.text-animation span::before{
+  content: "Web Developer";
+  color: var(--main-color);
+
+  animation: words 20s infinite;
+}
+
+.text-animation span::after{
+  content: " ";
+  background: var(--bg-color);
+
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid var(--bg-color);
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+    border-left: 2px solid var(--main-color);
+  }
+  
+}
+
+@keyframes words{
+  0%,
+  20%{
+    content: "Frontend Designer";
+  }
+  21%,
+  40%{
+    content: "Web Designer";
+  }
+  41%,
+  60%{
+    content: "Engineer";
+  }
+  61%,
+  80%{
+    content: "Web Developer";
+  }
+  81%,
+  100%{
+    content: "Software Tester";
+  }
+}
+
+
+@keyframes typing{
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95%{
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85%{width: calc(100% + 8px);}
+}
+
+</style>
+

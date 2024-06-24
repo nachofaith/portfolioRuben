@@ -24,19 +24,15 @@ const { title } = Astro.props;
 <style is:global>
 	:root {
 
+		/* --bg-color: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% ); */
+		--bg-color: #181818;
+		--main-color: #2ee400;
+
 	}
 	html {
-		background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+		background: var(--bg-color);
+		/* background-image: var(--bg-color) */
+		height: 100vh;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+
 </style>

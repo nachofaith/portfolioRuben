@@ -1,26 +1,38 @@
-<div class="md:container flex flex-row mx-auto">
+---
+import Experience from "./Experience.astro";
+---
 
-<div>
-<div id="icon"></div>
-<div id="linea"></div>
+<div class="md:container flex flex-col mx-auto">
+    <div>
+        <h1 class="text-white text-6xl text-center p-10">Experience</h1>
+    </div>
+
+    <Experience
+        title="Jefe de equipo técnico en redes computacionales"
+        ent="Rel&Com | Santiago, Chile"
+        year="2009 - 2013"
+        desc="Técnico certificado en cableado estructurado de redes de acuerdo a normas EIA/TIA568, a cargo de equipos de trabajo en terreno, a lo largo del país."
+    />
+
+    <Experience
+        title="Tester QA"
+        ent="Hewlett-Packard y Banco de Chile | Santiago, Chile"
+        year="2013 - 2017"
+        desc="Analista tester QA en la empresa HP participando en múltiples proyectos para el cliente Banco de Chile y Continuidad Productiva"
+    />
+
+    <Experience
+        title="Ingeniero de Operaciones"
+        ent="Kiwox Spa | Santiago, Chile"
+        year="2017 - 2018"
+        desc="Ingeniero de operaciones para empresa contratista de Entel, prestando servicios para los distintos sistemas brindados para Entel Chile y Entel Perú"
+    />
+
+    <Experience
+        title="FrontEnd Developer"
+        ent="MPGroup| Santiago, Chile"
+        year="2018 - 2019"
+        desc="Desarrollador en lenguajes tales como Java, PHP y Javascript principalmente para el manejo de herramientas Oracle (OracleCloud, RightNow, Eloqua)"
+    />
 </div>
 
-<div id="contenido">
-    <h1 class="text-white text-4xl">Experience</h1>
-
-</div>
-
-
-</div>
-
-
-<style>
-
-.linea{
- border-left: thick solid #000;
- height:100%;
- left: 50%;
- position: absolute;
-}
-
-</style>
